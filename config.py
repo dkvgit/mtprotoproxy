@@ -13,7 +13,7 @@ MODES = {
 }
 
 # Домен для маскировки TLS
-TLS_DOMAIN = "cdn.cloudflare.com"
+TLS_DOMAIN = "www.microsoft.com"
 
 # Если используешь рекламу от @MTProxybot — сюда можно вставить
 # AD_TAG = "your_ad_tag_here"
