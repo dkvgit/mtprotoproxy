@@ -1,27 +1,19 @@
 PORT = 443
 
-# name -> secret (32 hex chars)
+# Пользователи и их секреты
 USERS = {
-    "tg":  "00000000000000000000000000000001",
-    # "tg2": "0123456789abcdef0123456789abcdef",
+    "user1": "a27821cee2c6f517a75ac9a63f0d7a84"
 }
 
+# Режимы маскировки
 MODES = {
-    # Classic mode, easy to detect
     "classic": False,
-
-    # Makes the proxy harder to detect
-    # Can be incompatible with very old clients
     "secure": False,
-
-    # Makes the proxy even more hard to detect
-    # Can be incompatible with old clients
-    "tls": True
+    "tls": True  # включён TLS-режим, требуется TLS_DOMAIN
 }
 
-# The domain for TLS mode, bad clients are proxied there
-# Use random existing domain, proxy checks it on start
-# TLS_DOMAIN = "www.google.com"
+# Домен для маскировки TLS
+TLS_DOMAIN = "cdn.cloudflare.com"
 
-# Tag for advertising, obtainable from @MTProxybot
-# AD_TAG = "3c09c680b76ee91a4c25ad51f742267d"
+# Если используешь рекламу от @MTProxybot — сюда можно вставить
+# AD_TAG = "your_ad_tag_here"
